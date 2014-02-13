@@ -40,7 +40,7 @@ body{
 	height: 150%;
 	width: 17%;
 	background-color: #FF6600;
-	margin-right: 2%;
+	margin-right: 3%;
 	color: #FFFFFF;
 	text-align: center;
 }
@@ -48,17 +48,17 @@ body{
 #textArea{
 	height: 150%;
 	/*width: 82.5%;*/
-	width: 35%;
+	width: 40%;
 	background-color: #F5FAFA;
 	color: #000000;
 	margin-right: 2%;
 }
 
 #twitterFeed{
-	width: 35%;
+	width: 37%;
 	height: 150%;
 	background-color: #333333;
-	margin-left: 56%;
+	margin-left: 63%;
 	border-radius: 15px;
 }
 
@@ -67,7 +67,7 @@ body{
 }
 
 .twitter-timeline{
-	margin-left: 2.5%;
+	margin-left: 5.25%;
 }
 
 
