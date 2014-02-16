@@ -50,7 +50,7 @@ body{
 */
 
 
-#textArea{
+#aboutMeTextArea{
 	height: 50%;
 	/*width: 82.5%;*/
 	width: 60%;
@@ -79,19 +79,19 @@ body{
 }
 
 
-#textArea p{
+#aboutMeTextArea p{
 	margin-left: 9%;
 }
 
-#textArea h1{
+#aboutMeTextArea h1{
 	margin-left: 7%;
 }
 
-#navbar, #textArea{
+#navbar, #aboutMeTextArea{
 	float: left;
 }
 
-#header, #navBar, #textArea{
+#header, #navBar, #aboutMeTextArea{
 	border-radius: 15px;
 }
 
