@@ -57,6 +57,7 @@ body{
 	background-color: #F5FAFA;
 	color: #000000;
 	margin-right: 2%;
+	overflow:auto;
 }
 
 #twitterFeed{
@@ -81,6 +82,7 @@ body{
 
 #textArea p{
 	margin-left: 9%;
+	padding: 1%;
 }
 
 #textArea h1{
@@ -96,6 +98,6 @@ body{
 }
 
 .container{
-	overflow: hidden;
+	height: 100%;
 	padding-bottom: 3000px;
 }
