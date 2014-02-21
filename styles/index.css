@@ -50,7 +50,7 @@ body{
 */
 
 
-#aboutMeTextArea{
+.evenSetTextArea, .oddSetTextArea{
 	height: 50%;
 	/*width: 82.5%;*/
 	width: 60%;
@@ -80,21 +80,36 @@ body{
 }
 
 
-#aboutMeTextArea p{
+.evenSetTextArea, .oddSetTextArea p{
 	margin-left: 9%;
-	padding: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	/*text-indent: 50px;*/
 }
 
-#aboutMeTextArea h1{
+.evenSetTextArea, .oddSetTextArea h1{
 	margin-left: 7%;
 }
 
-#navbar, #aboutMeTextArea{
+.evenSetTextArea, .oddSetTextArea h4{
+	margin-left: 9%;
+}
+
+#navbar, .evenSetTextArea, .oddSetTextArea{
 	float: left;
 }
 
-#header, #navBar, #aboutMeTextArea{
+#header, #navBar, .evenSetTextArea, .oddSetTextArea{
 	border-radius: 15px;
+}
+
+.oddSetTextArea{
+	margin-top: 1%;
+	margin-left: 2.5%;
+}
+
+.evenSetTextArea{
+	margin-left: 0%;
 }
 
 .container{
