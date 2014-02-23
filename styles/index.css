@@ -25,7 +25,7 @@ body{
 }
 
 
-.evenSetTextArea, .oddSetTextArea{
+.textArea{
 	height: 50%;
 	width: 60%;
 	background-color: #F5FAFA;
@@ -35,13 +35,17 @@ body{
 }
 
 #twitterFeed{
-	width: 34%;
-	height: 150%;
+	width: 35%;
+	height: 250%;
 	background-color: #333333;
 	margin-left: 63%;
-	border-radius: 15px;
+	border-radius: 5px;
 	right: 0;
 	top: 0;
+}
+
+#twitter{
+	margin-left: .75%;
 }
 
 
@@ -66,22 +70,19 @@ body{
 }
 
 
-#navbar, .evenSetTextArea, .oddSetTextArea{
+#navbar, .textArea{
 	float: left;
 }
 
-#header, #navBar, .evenSetTextArea, .oddSetTextArea{
+#header, #navBar, .textArea{
 	border-radius: 15px;
 }
 
-.oddSetTextArea{
-	margin-top: 1%;
-	margin-left: 2.5%;
+.textArea{
+	margin-left: 1.1%;
+	margin-bottom: 1%;
 }
 
-.evenSetTextArea{
-	margin-left: 0%;
-}
 
 .container{
 	height: 100%;
