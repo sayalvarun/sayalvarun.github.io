@@ -48,6 +48,20 @@ body{
 	margin-left: .75%;
 }
 
+#downloadArea{
+	width:98.5%;
+	height:25%;
+	border-radius: 5px;
+	margin-left: .75%;
+	margin: 0 auto;
+	background-color: #F5FAFA;
+}
+
+#downloadArea p{
+	margin-left: 3%;
+	padding-left: 1%;
+	padding-top: 2%;
+}
 
 #LinkedIn{
 	margin-top: 2.5%;
