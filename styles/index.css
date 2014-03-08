@@ -28,7 +28,8 @@ body{
 .textArea{
 	height: 50%;
 	width: 60%;
-	background-color: #F5FAFA;
+	/*background-color: #F5FAFA;*/
+	background-color: #F2FBFF;
 	color: #000000;
 	/*margin-right: 2%;*/
 	overflow:auto;
