@@ -28,7 +28,6 @@ body{
 .textArea{
 	height: 50%;
 	width: 60%;
-	/*background-color: #F5FAFA;*/
 	background-color: #F2FBFF;
 	color: #000000;
 	/*margin-right: 2%;*/
@@ -55,7 +54,7 @@ body{
 	border-radius: 5px;
 	margin-left: .75%;
 	margin: 0 auto;
-	background-color: #F5FAFA;
+	background-color: #F2FBFF;
 }
 
 #downloadArea p{
