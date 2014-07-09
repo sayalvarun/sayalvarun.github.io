@@ -1,104 +1,168 @@
-html, body{
-
-	font-family: Georgia;
-
-}
-
 body{
-	border-radius: 15px;
-	background: url('images/stardust.png');
+	overflow: auto;
 }
 
-#header{
+body, h1, p, div, li{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar{
+	height: 65px;
+	/*background-color: #FF6600;*/
+	background-color: #E5E5E5;
+	overflow: auto;
 	width: 100%;
-	height: 10%;
-	margin-bottom: .5%;
-	
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: fixed;
 }
 
-#header h1{
-	position: relative;
-	top: 15px;
-	left: 45px;
-	color: #FFFFFF;
-	border: black;
+.left{
+	position:absolute;
+    left:0;
+    width:250px;
 }
 
-
-.textArea{
-	height: 50%;
-	width: 60%;
-	background-color: #F2FBFF;
-	color: #000000;
-	/*margin-right: 2%;*/
-	overflow:auto;
-}
-
-#twitterFeed{
-	width: 35%;
-	height: 310%;
-	background-color: #333333;
-	margin-left: 63%;
-	border-radius: 5px;
-	right: 0;
-	top: 0;
-}
-
-#twitter{
-	margin-left: .75%;
-}
-
-#downloadArea{
-	width:98.5%;
-	height:25%;
-	border-radius: 5px;
-	margin-left: .75%;
-	margin: 0 auto;
-	background-color: #F2FBFF;
-}
-
-#downloadArea p{
-	margin-left: 3%;
-	padding-left: 1%;
-	padding-top: 2%;
-}
-
-#LinkedIn{
-	margin-top: 2.5%;
+.center{
+	margin: 0;
 	text-align: center;
+	line-height: 65px;
 }
 
 
-
-.textAreaParagraph{
-	margin-left: 3%;
-	padding-left: 1%;
+.right{
+	position:absolute;
+    right:0;
+    top:0;
+	width: 250px;
+	margin-right: 10px;
+	margin-top: 20px;
 }
 
-.textAreaHeading{
-	margin-left: 3%;
+#navbar ul{
+	list-style-type: none;
+    margin-top: 0px;
+	/*margin-left: 38.5%;*/
+    padding: 0;
 }
 
-.textAreaBigHeading{
-	margin-left: 1%;
+#navbar li{
+	display: inline;
+	margin-left: -5px;
 }
 
+#navbar a{
+	text-decoration: none;
+	width: 100px;
+	color: grey;
+	display: inline-block;
+	background-color: #E5E5E5;
+	height: 65px;
+	margin-top: -2px;
+	border-style: solid;
+    border-width: thin;
+	border-color: #CECECE;
+	margin-right: 3px;	
+}
 
-#navbar, .textArea{
+#navbar a:hover{
+	color: white;
+	background-color: #222;
+}
+
+#social_bar{
+	float: right;
+}
+#nav_name_text{
+	font-size: 35px;
+	font-style: oblique;
+	font-weight: 300;
 	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
 }
 
-#header, #navBar, .textArea{
-	border-radius: 15px;
+#top_section{
+	text-align: center;
+	background-image: url('images/space.jpg');
+	/*background-color: #3D4048;*/
+	min-height: 600px;
+	color: white;
+	moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+   overflow: auto;
+   text-shadow:2px 2px #222;
+   padding-top: 65px;
 }
 
-.textArea{
-	margin-left: 1.1%;
-	margin-bottom: 1%;
+.not_name{
+	margin-top: -90px;
+	font-size: 55px;
+	font-weight: 300;
+	font-style: italic;
+	font-family: Arial;
+}
+
+#hi{
+	font-size: 330px;
+	margin-top: -80px;
+	font-weight: 700;	
+} 
+
+#name_text{
+	margin-top: 0px;
+	font-weight: 400;
+	font-size: 35px;
+	font-family: 'Calligraffitti', cursive;
+}
+
+#thanks{
+	margin-top: -40px;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: light;
 }
 
 
-.container{
-	height: 100%;
-	padding-bottom: 3000px;
+#main_container{
+	background-color: white;
+	min-height: 1000px;
+}
+
+.text_area{
+	width: 900px;
+	/*background-color: #AA7570;*/
+	background-color: white;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	min-height: 400px;
+	
+	border-style: solid;
+    border-width: thin;
+	border-radius: 10px;
+	border-color: #D1D2D5;
+	
+	display: none;
+}
+
+.text_area h2{
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.text_area hr{
+	margin-top: 0;
+	width: 90%;
+}
+
+#bottom_section{
+	margin-top: 3000px;
 }
