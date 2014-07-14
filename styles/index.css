@@ -1,5 +1,6 @@
 body{
 	overflow: auto;
+	background-color: #f5f5f5;
 }
 
 body, h1, p, div, li{
@@ -76,6 +77,11 @@ body, h1, p, div, li{
 #social_bar{
 	float: right;
 }
+
+#social_bar li{
+	margin-left: 0px;
+}
+
 #nav_name_text{
 	font-size: 35px;
 	font-style: oblique;
@@ -129,40 +135,65 @@ body, h1, p, div, li{
 
 
 #main_container{
-	background-color: white;
+	background-color: #f5f5f5;
 	min-height: 1000px;
 }
 
-.text_area{
-	width: 900px;
+.text_area_a{
+	width: 100%;
 	/*background-color: #AA7570;*/
-	background-color: white;
+	background-color: #ea3852;
 	
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	min-height: 400px;
-	
+	margin:0;
+	min-height: 600px;
+	/*
 	border-style: solid;
     border-width: thin;
-	border-radius: 10px;
 	border-color: #D1D2D5;
-	
+	*/
 	display: none;
 }
 
-.text_area h2{
+.text_area_a h2{
 	text-align: center;
 	color: black;
 	font-size: 25px;
 	margin-top: 15px;
 }
 
-.text_area hr{
+.text_area_a hr{
+	margin-top: 0;
+	width: 90%;
+}
+
+.text_area_b{
+	width: 100%;
+	/*background-color: #AA7570;*/
+	/*background-color: white;*/
+	
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 600px;
+	
+	border-style: solid;
+    border-width: thin;
+	border-color: #D1D2D5;
+	
+	display: none;
+}
+
+.text_area_b h2{
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.text_area_b hr{
 	margin-top: 0;
 	width: 90%;
 }
 
 #bottom_section{
-	margin-top: 3000px;
+	
 }

@@ -10,9 +10,15 @@
 		<script>
 			$(window).bind("scroll", function() {
 				if ($(this).scrollTop() > 400) {
-					$(".text_area").fadeIn("slow");
+					$(".text_area_a").fadeIn("slow");
 				} else {
-					$(".text_area").stop().fadeOut("slow");
+					$(".text_area_a").stop().fadeOut("slow");
+				}
+				
+				if ($(this).scrollTop() > 900) {
+					$(".text_area_b").fadeIn("slow");
+				} else {
+					$(".text_area_b").stop().fadeOut("slow");
 				}
 			});
 		</script>
@@ -44,8 +50,12 @@
 			<p id="thanks">Thanks for visiting my website</p>
 		</div>
 		<div id="main_container">
-			<div class="text_area" id="introduction">
+			<div class="text_area_a" id="introduction">
 				<h2>Introduction</h2>
+				<hr>
+			</div>
+			<div class="text_area_b" id="education">
+				<h2>Education</h2>
 				<hr>
 			</div>
 		</div>
