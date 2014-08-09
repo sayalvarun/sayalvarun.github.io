@@ -7,21 +7,7 @@
 		<link href="styles/Hover-master/css/hover.css" rel="stylesheet" media="all">
 		
 		<script src="jquery.js"></script>
-		<script>
-			$(window).bind("scroll", function() {
-				if ($(this).scrollTop() > 400) {
-					$(".text_area_a").fadeIn("slow");
-				} else {
-					$(".text_area_a").stop().fadeOut("slow");
-				}
-				
-				if ($(this).scrollTop() > 900) {
-					$(".text_area_b").fadeIn("slow");
-				} else {
-					$(".text_area_b").stop().fadeOut("slow");
-				}
-			});
-		</script>
+		<script src="scripts/index.js"></script>
     </head>
     <body>
 		<div id="navbar">
@@ -30,33 +16,222 @@
 			</div>
 			<div class="center">
 				<ul>
-					<li><a href="index.html" class="glow"><p>Projects</p></a></li>
-					<li><a href="index.html" class="glow"><p>Interests</p></a></li>
+					<li><a class="middleLinks" href="index.html" class="glow"><p>Projects</p></a></li>
+					<li><a class="middleLinks" href="index.html" class="glow"><p>Interests</p></a></li>
 				</ul>
 			</div>
 			<div class="right">
 				<ul id="social_bar">
-					<li><img src="styles/images/icons/linkedin.png"></li>
+					<li><a href="www.linkedin.com/pub/varun-sayal/62/547/824" target="_blank"><img src="styles/images/icons/linkedin.png"></a></li>
 					<li><img src="styles/images/icons/googleplus.png"></li>
 					<li><img src="styles/images/icons/email.png"></li>
 					<li><img src="styles/images/icons/youtube.png"></li>
 				</ul>
 			</div>
 		</div>
+
 		<div id="top_section">
 			<h1 id="hi">Hi!<h1>
 			<p class="not_name">My name is</p>
 			<h2 id="name_text">Varun Sayal</h2>
 			<p id="thanks">Thanks for visiting my website</p>
 		</div>
+
 		<div id="main_container">
-			<div class="text_area_a" id="introduction">
-				<h2>Introduction</h2>
-				<hr>
+		
+			<div class="textAreaB">
+				<h2 class="textAreaAHeader">Who am I?</h2>
+				<br/>
+				<div id="introInfo">
+					<div>
+						<h2>Really Quickly:</h2>
+						<ul id="introInfoList">
+							<li>I am currently a student at Stony Brook University double majoring in Computer Science and Mathematics. I am part of a 4 year bachelors with honors program for Computer Science with a focus in Network Security.</li>
+							<li>I have worked as an intern for the Travlers Insurance Company as well as the American National Standards Institute (ANSI).</li>
+							<li>I have been to numerous hackathons such as Google's 24 hours of good hackathons as well as the Facebook hackathon.</li>
+						</ul>
+						<p>I have used the following technologies: <span style="font-weight: bold;">Java, C#, PHP, HTML, Javascript, JQuery, ASP.Net, Latex, Microsoft SharePoint</span></p>
+						<h3>Interested?</h3>
+						<p>More information follows below. If you need to get in contact in me please send me an e-mail through the link in the header bar.</p>
+					</div>
+				</div>
 			</div>
-			<div class="text_area_b" id="education">
-				<h2>Education</h2>
-				<hr>
+
+			<div class="textAreaA">
+				<h2 class="textAreaAHeader">Education:</h2>
+				<div id="educationInfo">
+					<div class="educationDiv">
+						<h2>Degree:</h2>
+						(Expected Graduation: 2016)
+						<ul>
+						<li>Bachelors of Computer Science with Honors
+							<ul>
+								<li>In Major GPA: 3.82</li>
+							</ul>
+						</li>
+						<li>Bachelors of Mathematics with Honors
+							<ul>
+								<li>In Major GPA: 3.81</li>
+							</ul>
+						</li>
+						<li>SAT score: 2290
+							<ul>
+								<li>99th percentile</li>
+							</ul>
+						</li>
+						<li>Deans List
+							<ul>
+								<li>Fall 2012 - Spring 2014</li>
+							</ul>
+						</li>
+						</ul>
+					</div>
+					<div class="educationDiv">
+						<h2>Achievements and Awards:</h2>
+						<ul>
+						<li>Full Presidential Scholarship to Stony Brook University
+							<ul>
+								<li>Awarded merit based full scholarship for a four year bachelors degree</li>
+							</ul>
+						</li>
+						<li>Induction into Stony Brook Honors Computer Science Program
+							<ul>
+								<li>Granted induction into academic program with a yearly acceptance of ~30 students</li>
+								<li>Given access to specialized honors curriculum with a focus on advanced computer science topics</li>
+							</ul>
+						</li>
+						<li>Induction into Stony Brook University Scholars Honors Program
+							<ul>
+								<li>Inducted into school wide honors program given to the top 8% of applicants</li>
+								<li>Provided preferential access to 'honors' classes within all disciplines</li>
+							</ul>
+						</li>
+						</ul>
+					</div>
+					<div class="educationDiv">
+						<h2>Relevant Coursework:</h2>
+						<ul>
+						<li>Computer Science:
+							<ul>
+								<li>CSE 150: Foundations in Computer Science Honors</li>
+								<li>CSE 160: Computer Science A Honors (Intermediate Java)</li>
+								<li>CSE 260: Computer Science B Honors (Advanced Java)</li>
+								<li>CSE 220: Systems Level Programming (Intro to C and Assembly)</li>
+								<li>CSE 305: Principles of Database Systems</li>
+								<li>CSE 320: Computer Org. & Architecture</li>
+								<li>CSE 350: Theory of Computation Honors</li>
+								<li>CSE 373: Theory of Algorithms</li>
+							</ul>
+						</li>
+						<li>Mathematics:
+							<ul>
+								<li>AMS 161: Applied Calculus II</li>
+								<li>AMS 210: Applied Linear Algebra</li>
+								<li>AMS 301: Finite Mathematical Structures</li>
+								<li>MAT 303: Calculus IV with Applications</li>
+							</ul>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="textAreaB">
+				<h2 class="textAreaBHeader">Previous Experience:</h2>
+				<div id="experienceInfo">
+					<div id="experienceList">
+						<ul class="nestedList">
+							<b>Travelers IT Intern (June 2014 -> August 2014)</b>
+								<li>
+									<ul>
+										<li>Managed and planned two in-flight development projects dedicated to improved departmental efficiency</li>
+										<li>Developed a project to manage the department Q/A devices through the use of a .Net web application</li>
+										<li>Contributed to the development of a stackoverflow-like web application that would allow for efficient intra-departmental problem solving.</li>
+										<li>Leveraged SharePoint technologies in conjunction with JQuery libraries to develop custom SharePoint sites</li>
+										<li>Implemented strong agile methodologies during the course of project development</li>
+									</ul>
+								</li>
+							<b>ANSI IT Intern (June 2013 -> August 2013)</b>
+								<li>
+									<ul>
+										<li>Completed analysis of Dell/Sharepoint Migration Manager and contributed to the development of the data 
+											migration project at ANSI</li>
+										<li>Mentored a fellow summer intern, reviewing his reports, Microsoft Visio diagrams, and Microsoft Project project plans</li>
+										<li>Participated and contributed actively in many IT technical meetings. Several of my recommendations were adopted and are currently in production at ANSI.</li>
+									</ul>
+								</li>
+							<b>Stony Brook Linux Cluster Admin (Feburary 2014 -> Present)</b>
+								<li>
+									<ul id="lastListElements">
+										<li>Oversee the operations of the research based Linux clusters currently being operated by Math and Computer Science 
+											research teams</li>
+										<li>Manage and relieve any technical issues regarding the clusters efficiently</li>
+									</ul>
+								</li>
+						</ul>
+					</div>
+					<div id="experienceImages">
+						<img src="styles/images/travelers.png" id="travelersLogo"/>
+						<img src="styles/images/ansi.png" id="ansiLogo"/>
+						<img src="styles/images/sbuLogo.png" id="sbuLogo"/>
+					</div>
+				</div>
+			</div>
+			<div class="textAreaA">
+				<h2 class="textAreaAHeader">Hackathon Projects:</h2>
+				<div id="projectsInfo">
+					<ul class="nestedList">
+						<b>Google's 24 Hours Of Good Hackathon 2 (February 2014)</b>
+						<li class="innerListContainer"><ul>
+							<li>Orchestrated a web-based, hacker simulator game as per project prompt. Received praise for the originality of the idea.</li>
+							<li>Contributed heavily to the design and construction of the web page 'levels' that the hacker would have
+							to complete.</li>
+							<li>Implemented a strong educational back story that encouraged strong passwords and good security practices with particular emphasis on 2-step authentication.</li>
+							Relevant Skills Used: <span>HTML, CSS, Javascript, GIT</span>
+						</ul></li>
+					<b>Facebook Hackathon (October 2013)</b>
+						<li class="innerListContainer"><ul>
+							<li>Worked on an android application based on the popular card game, cards against humanity</li>
+							<li>Implemented client side game logic related to the card game</li>
+							<li>Began implementation on server side game logic and lobby system</li>
+							Relevant Skills Used: <span>Java, XML, PHP</span>
+						</ul></li>
+					<b>Google's 24 Hours Of Good Hackathon (October 2012)</b>
+						<li class="innerListContainer"><ul>
+							<li>Created, along with a team, an android application, using Java, for the not-for-profit organization,
+							Greenmap, at Google HQ NYC.</li>
+							<li>Implemented list functionality that was used to sort “green” locations by their subcategory as specified
+							by design instructions.</li>
+							<li>Began implementation of a Google Maps functionality that allowed users to locate these "green" locations
+							based on their current position.</li>
+							Relevant Skills Used: <span>Java, XML</span>
+						</ul></li>
+					</ul>
+				</div>
+			</div>
+			<div class="textAreaB" style="height: 450px;">
+				<h2 class="textAreaBHeader">Previous Experience:</h2>
+				<div id="extraCurrInfo">
+					<ul class="nestedList">
+						<b>President at RecycleIT (August 2012 - Present)</b>
+							<li class="innerListContainer"><ul>
+								<li>Responsible for the management of the repair and donation of computers to impoverished schools and communitties.</li>
+								<li>Organize and spearhead club meetings and events</li>
+								<li>Reach out to needy communitties to organize computer donations</li>
+							</ul></li>
+						<b>University Scholars Committee Head (August 2012 - Present)</b>
+							<li class="innerListContainer"><ul>
+								<li>Responsible for managing the recreational and social branch of university scholars</li>
+								<li>Lead by weekly club meetings to plan future networking and social events geared for the university scholars honors program</li>
+								<li>Orchestrate and host networking events and speaker series planned by the committee</li>
+							</ul></li>
+						<b>Stony Brook Computing Society (February 2012 - Present)</b>
+						<li class="innerListContainer"><ul>
+							<li>Participate in weekly meetings discussing current and interesting technologies as well as helping organize
+							computer science related events.</li>
+						</ul>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div id="bottom_section">
