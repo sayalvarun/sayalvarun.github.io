@@ -143,7 +143,7 @@ body, h1, p, div, li{
 .textAreaAHeader{
 	font-size: 48px;
 	font-family: sans-serif;
-	padding-top: 0px;
+	margin-top: 15px;
 }
 
 .textAreaBHeader{
@@ -219,9 +219,12 @@ body, h1, p, div, li{
 	margin-top: 10px;
 }
 
-#experienceInfo ul{
+#experienceInfo{
 	text-align: left;
-	font-size: 16px;
+}
+
+#experienceInfo ul{
+	font-size: 15px;
 }
 
 #experienceInfo li{
@@ -238,7 +241,7 @@ body, h1, p, div, li{
 
 #experienceList{
 	display: inline-block;
-	width: 65%
+	width: 64%
 }
 
 #lastListElements{
@@ -251,7 +254,8 @@ body, h1, p, div, li{
 	margin-left: 70px;
 	float: right;
 	padding-right: 10px;
-	margin-top: 25px
+	margin-top: 25px;
+	text-align: center;
 }
 
 #projectsInfo{
