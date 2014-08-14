@@ -9,6 +9,14 @@ body, h1, p, div, li{
 	padding: 0;
 }
 
+h2,h3{
+	font-weight: lighter;
+}
+
+.hidden{
+	visibility : hidden;
+}
+
 #navbar{
 	height: 65px;
 	/*background-color: #FF6600;*/
@@ -67,11 +75,15 @@ body, h1, p, div, li{
     border-width: thin;
 	border-color: #CECECE;
 	margin-right: 3px;	
+    transition: all 0.3s ease-in;
+    
 }
 
-.middleLinks a:hover{
+.middleLinks:hover{
+	box-shadow: 0 0 5px #000000;
+	background-color: #333333;
 	color: white;
-	background-color: #222;
+	text-decoration: none;
 }
 
 #social_bar{
@@ -91,22 +103,25 @@ body, h1, p, div, li{
 	margin-left: 10px;
 }
 
+#mailImage:hover{
+	cursor: pointer;
+}
+
 #top_section{
 	text-align: center;
 	background-image: url('images/space.jpg');
-	/*background-color: #3D4048;*/
 	min-height: 600px;
 	color: white;
 	moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
-   overflow: auto;
-   text-shadow:2px 2px #222;
-   padding-top: 65px;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    overflow: auto;
+    text-shadow:2px 2px #222;
+    padding-top: 65px;
 }
 
 .not_name{
-	margin-top: -90px;
+	margin-top: -60px;
 	font-size: 55px;
 	font-weight: 300;
 	font-style: italic;
@@ -115,7 +130,7 @@ body, h1, p, div, li{
 
 #hi{
 	font-size: 330px;
-	margin-top: -80px;
+	margin-top: -30px;
 	font-weight: 700;	
 } 
 
@@ -127,12 +142,23 @@ body, h1, p, div, li{
 }
 
 #thanks{
-	margin-top: -40px;
+	margin-top: -10px;
 	font-size: 30px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: light;
 }
 
+#modalSubject, #modalBody{
+	width: 80%;
+}
+
+#modalSubject{
+	margin-bottom: 15px;
+}
+
+#modalBody{
+	height: 180px;
+}
 
 #main_container{
 	background-color: #f5f5f5;
@@ -144,13 +170,14 @@ body, h1, p, div, li{
 	font-size: 48px;
 	font-family: sans-serif;
 	margin-top: 15px;
+	margin-bottom: 25px;
 }
 
 .textAreaBHeader{
 	font-size: 48px;
 	font-family: sans-serif;
-	padding-top: 10px;
-	margin-bottom: 0px;
+	padding-top: 30px;
+	margin-bottom: 15px;
 }
 
 .textAreaA{
@@ -203,11 +230,12 @@ body, h1, p, div, li{
 	width: 450px;
 	background-color: #00001D;
 	height: 500px;
-	margin-top: -15px;
+	margin-top: 0px;
 	box-shadow: 2px 5px 15px #000;
 	display: inline-block;
 	overflow: auto;
 	margin-left: 5px;
+	font-size: 15px;
 }
 
 .educationDiv li{
@@ -224,7 +252,7 @@ body, h1, p, div, li{
 }
 
 #experienceInfo ul{
-	font-size: 15px;
+	font-size: 14px;
 }
 
 #experienceInfo li{
@@ -259,7 +287,8 @@ body, h1, p, div, li{
 }
 
 #projectsInfo{
-	width: 58%;
+	width: 64%;
+	float: left;
 }
 
 #experienceImages img{
@@ -280,8 +309,28 @@ body, h1, p, div, li{
 	margin-top: 35px;
 }
 
+#sbuLogo2{
+	width: 100%;
+}
+
+.googleLogo{
+	margin-top: 15px;
+	width: 100%;
+}
+
+#facebookLogo{
+	margin-top: 25px;
+	width: 65%;
+}
+
 #projectsInfo ul , b{
 	text-align: left;
+}
+
+#projectsImages{
+	width: 25%;
+	float: right;
+	margin-right: 4%;
 }
 
 .nestedList{
@@ -294,17 +343,35 @@ body, h1, p, div, li{
 
 .innerListContainer{
 	margin-bottom: 20px;
+	font-size: 16px;
 }
 
-.innerListContainer span{
+.innerListContainer span{margin-bottom: 23px;
+	margin-top: 10px;
 	font-weight: bold;
 }
 
 #extraCurrInfo{
-	width: 60%;
+	width: 64%;
+	float: left;
 }
 
 #extraCurrInfo ul, b{
 	text-align: left;
 }
 
+#extraImages{
+	width: 36%;
+	float: right;
+}
+
+#sbcsLogo{
+	width: 100%;
+}
+
+#scholarsLogo{
+	height: 140px;
+	width: 72px;
+	margin-bottom: 23px;
+	margin-top: 10px;
+}

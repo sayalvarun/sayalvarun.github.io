@@ -5,9 +5,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Calligraffitti|Pacifico' rel='stylesheet' type='text/css'>
 		<link href="styles/Hover-master/css/hover.css" rel="stylesheet" media="all">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 		
 		<script src="jquery.js"></script>
 		<script src="scripts/index.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
     </head>
     <body>
 		<div id="navbar">
@@ -16,16 +18,16 @@
 			</div>
 			<div class="center">
 				<ul>
-					<li><a class="middleLinks" href="index.html" class="glow"><p>Projects</p></a></li>
-					<li><a class="middleLinks" href="index.html" class="glow"><p>Interests</p></a></li>
+					<li><a class="middleLinks" href="index.html"><p>Projects</p></a></li>
+					<li><a class="middleLinks" href="index.html"><p>Interests</p></a></li>
 				</ul>
 			</div>
 			<div class="right">
 				<ul id="social_bar">
 					<li><a href="https://www.linkedin.com/pub/varun-sayal/62/547/824" target="_blank"><img src="styles/images/icons/linkedin.png"></a></li>
-					<li><img src="styles/images/icons/googleplus.png"></li>
-					<li><img src="styles/images/icons/email.png"></li>
-					<li><img src="styles/images/icons/youtube.png"></li>
+					<li><a href="https://plus.google.com/u/1/+VarunSayalIam/about" target="_blank"><img src="styles/images/icons/googleplus.png"></a></li>
+					<li><a data-toggle="modal" data-target="#basicModal"><img src="styles/images/icons/email.png" id="mailImage"></a></li>
+					<li><a href="https://www.youtube.com" target="_blank"><img src="styles/images/icons/youtube.png"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -38,7 +40,24 @@
 		</div>
 
 		<div id="main_container">
-		
+			<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+			    <div class="modal-dialog">
+			        <div class="modal-content">
+			            <div class="modal-header">
+			            <h4 class="modal-title" id="myModalLabel">E-mail form</h4>
+			            </div>
+			            <div class="modal-body">
+			                <input placeholder="Subject" id="modalSubject" required/><br/>
+			                <textarea placeholder="Body of email" id="modalBody"></textarea>
+			            </div>
+			            <div class="modal-footer">
+			                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			                <a id="sendEmailLink" href="#" class="btn btn-primary">Send</a>
+			        </div>
+			    </div>
+			  </div>
+			</div>
+
 			<div class="textAreaB">
 				<h2 class="textAreaAHeader">Who am I?</h2>
 				<br/>
@@ -208,6 +227,11 @@
 						</ul></li>
 					</ul>
 				</div>
+				<div id="projectsImages">
+					<img src="styles/images/google.png" class="googleLogo"/>
+					<img src="styles/images/facebook.png" id="facebookLogo"/>
+					<img src="styles/images/google.png" class="googleLogo" id="google2"/>
+				</div>
 			</div>
 			<div class="textAreaB">
 				<h2 class="textAreaBHeader">Extracurricular Activities:</h2>
@@ -231,6 +255,11 @@
 							computer science related events.</li>
 						</ul>
 					</ul>
+				</div>
+				<div id="extraImages">
+					<img src="styles/images/sbuLogo.png" id="sbuLogo2"/>
+					<img src="styles/images/scholarsTorch.png" id="scholarsLogo"/>
+					<img src="styles/images/sbcs.png" id="sbcsLogo"/>
 				</div>
 			</div>
 		</div>
