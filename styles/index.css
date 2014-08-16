@@ -182,7 +182,7 @@ h2,h3{
 
 .textAreaA{
 	background-color: #4E4E56;
-	height: 650px;
+	min-height: 650px;
 	color: white;
 	moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
@@ -195,7 +195,7 @@ h2,h3{
 	background-color: #f5f5f5
 	color: #737373;
     margin-top: -40px;
-    height: 650px;
+    min-height: 650px;
     overflow: hidden;
 }
 
@@ -218,7 +218,8 @@ h2,h3{
 #introInfoList{
 	text-align: left;
 	width: 55%;		
-	margin-left: 21%;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 18px;
 }
 
@@ -227,7 +228,7 @@ h2,h3{
 }
 
 .educationDiv{
-	width: 450px;
+	width: 32%;
 	background-color: #00001D;
 	height: 500px;
 	margin-top: 0px;
@@ -236,6 +237,7 @@ h2,h3{
 	overflow: auto;
 	margin-left: 5px;
 	font-size: 15px;
+	vertical-align: top;
 }
 
 .educationDiv li{
@@ -302,24 +304,25 @@ h2,h3{
 #ansiLogo{
 	height: 120px;
 	width: 200px !important;
-	margin-top: 70px;
+	margin-top: 25%;
 }
 
 #sbuLogo{
-	margin-top: 35px;
+	margin-top: 11%;
 }
 
 #sbuLogo2{
 	width: 100%;
+	margin-top: 5%;
 }
 
 .googleLogo{
-	margin-top: 15px;
+	margin-top: 12%;
 	width: 100%;
 }
 
 #facebookLogo{
-	margin-top: 25px;
+	margin-top: 16%;
 	width: 65%;
 }
 
@@ -361,12 +364,13 @@ h2,h3{
 }
 
 #extraImages{
-	width: 36%;
+	width: 31%;
 	float: right;
 }
 
 #sbcsLogo{
 	width: 100%;
+	margin-top: 3%;
 }
 
 #scholarsLogo{
@@ -374,4 +378,65 @@ h2,h3{
 	width: 72px;
 	margin-bottom: 23px;
 	margin-top: 10px;
+}
+
+#bottom_section{
+	background-color: #6B6B6B;
+	color: white;
+	height: 7%;
+	text-align: center;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	#experienceImages{
+		display: none;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+	#experienceInfo{
+		text-align: left;
+	}
+
+	#experienceList{
+		width: 100%;
+	}
+
+	#projectsInfo{
+		width: 100%;
+	}
+
+	#extraCurrInfo{
+		width: 100%;
+	}
+
+	#educationDiv{
+		height: 500px !important;
+	}
+
+	#experienceInfo ul{
+		width: 100%;
+		padding-bottom: 35px;
+	}
+
+	.nestedList{
+		font-size: 20px;
+	}
+
+	#experienceInfo li{
+		text-align: left;
+	}
+
+	#main_container img{
+		display: none;
+	}
+
+	#introInfo ul{
+		width: 75%;
+	}
 }

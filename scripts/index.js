@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	$("#sendEmailLink").click(function(){
 		getExtra();
-
 	});
+	$('#navbar').followTo($("#main_container").offset().top -40);
 });
 
 
@@ -15,3 +15,24 @@ function getExtra(){
 	base = base + subjectBase + modalSubjectText + bodyBase + modalBodyText;
 	$("#sendEmailLink").attr('href',base);
 }
+
+var windw = this;
+
+$.fn.followTo = function ( pos ) {
+    var $this = this,
+        $window = $(windw);
+    
+    $window.scroll(function(e){
+        if ($window.scrollTop() > pos) {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};
