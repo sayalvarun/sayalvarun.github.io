@@ -21,7 +21,6 @@ h2,h3{
 	height: 65px;
 	/*background-color: #FF6600;*/
 	background-color: #E5E5E5;
-	overflow: auto;
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -390,12 +389,14 @@ h2,h3{
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-	#experienceImages{
-		display: none;
-	}
 
-	body{
-		width: 320px;
+	html,body
+	{
+	    width: 100%;
+	    height: 100%;
+	    margin: 0px;
+	    padding: 0px;
+	    overflow-x: hidden; 
 	}
 
 	#hi{
@@ -406,13 +407,14 @@ and (max-device-width : 480px) {
 		width: 320px;
 	}
 
-	#navbar{
-		display: none;
-	}
-
 	.center, .right{
 		display: none;
 	}
+
+	#main_container img{
+		display: none;
+	}
+
 }
 
 @media only screen 
