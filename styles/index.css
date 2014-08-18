@@ -447,6 +447,7 @@ and (max-device-width : 480px) {
 
 	#top_section, #main_container, #bottom_section, #navbar{
 		width: 100%;
+		overflow-x: hidden;
 	}
 
 	#social_bar img{
