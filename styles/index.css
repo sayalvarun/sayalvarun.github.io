@@ -392,8 +392,8 @@ and (max-device-width : 480px) {
 
 	html,body
 	{
-	    width: 100%;
-	    /*height: 100%;*/
+	    width: 320px;
+	    height: 100%;
 	    margin: 0px;
 	    padding: 0px;
 	    overflow-x: hidden; 
@@ -446,8 +446,7 @@ and (max-device-width : 480px) {
 	}
 
 	#top_section, #main_container, #bottom_section, #navbar{
-		width: 100%;
-		overflow-x: hidden;
+		width: 100% !important;
 	}
 
 	#social_bar img{
