@@ -399,16 +399,62 @@ and (max-device-width : 480px) {
 	    overflow-x: hidden; 
 	}
 
+	#nav_name_text{
+		font-size: 29px;
+		margin-top: 15px;
+	}
+
+	.not_name{
+		margin-top: -35px;
+	}
+
+	#introInfoList{
+		width: 90%;
+	}
+
+	#moreInfo{
+		margin-bottom: 50px;
+	}
+
+	.educationDiv{
+		width: 100% !important;
+		display: block;
+		height: auto !important;
+		margin-bottom: 10px; 
+	}
+
+	#experienceList{
+		width: 100%;
+	}
+
+	#projectsInfo{
+		width: 100%;
+	}
+
+	#extraCurrInfo{
+		width: 100%;
+	}
+
 	#hi{
-		font-size: 50px;
+		font-size: 175px;
+		margin-top: 20px;
 	}
 
 	#top_section, #main_container, #bottom_section, #navbar{
 		width: 320px;
 	}
 
-	.center, .right{
+	#social_bar img{
+		width: 19%;
+	}
+
+	.center{
 		display: none;
+	}
+
+	.right{
+		right: -18;
+		top: 2;
 	}
 
 	#main_container img{
@@ -435,10 +481,6 @@ and (max-device-width : 1024px) {
 
 	#extraCurrInfo{
 		width: 100%;
-	}
-
-	#educationDiv{
-		height: 500px !important;
 	}
 
 	#experienceInfo ul{
