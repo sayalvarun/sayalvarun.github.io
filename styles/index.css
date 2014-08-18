@@ -446,7 +446,7 @@ and (max-device-width : 480px) {
 	}
 
 	#top_section, #main_container, #bottom_section, #navbar{
-		width: 320px;
+		width: 100%;
 	}
 
 	#social_bar img{
