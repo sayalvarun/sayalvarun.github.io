@@ -2,8 +2,10 @@
     <head>
         <title>Varun Sayal - Welcome!</title>
         <link rel="stylesheet" type="text/css" href="styles/index.css" />
+        <link rel="stylesheet" type="text/css" href="styles/master.css"/>
         <link rel="stylesheet" type="text/css" href="styles/indexTablet.css" />
         <link rel="stylesheet" type="text/css" href="styles/indexPhone.css" />
+
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Calligraffitti|Pacifico' rel='stylesheet' type='text/css'>
 		<link href="styles/Hover-master/css/hover.css" rel="stylesheet" media="all">
@@ -12,6 +14,7 @@
 		<script src="jquery.js"></script>
 		<script src="scripts/index.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="waypoints/lib/jquery.waypoints.min.js"></script>
     </head>
     <body>
     	
@@ -21,8 +24,9 @@
 			</div>
 			<div class="center">
 				<ul>
-					<li><a class="middleLinks" href="index.html"><p>Projects</p></a></li>
-					<li><a class="middleLinks" href="index.html"><p>Interests</p></a></li>
+					<li><a class="middleLinks" href="index.html"><p>Home</p></a></li>
+					<li><a class="middleLinks" href="pages/projects.html"><p>Projects</p></a></li>
+					<li><a class="middleLinks" href="pages/interests.html"><p>Interests</p></a></li>
 				</ul>
 			</div>
 			<div class="right">
@@ -69,10 +73,10 @@
 						<h2>Really Quickly:</h2>
 						<ul id="introInfoList">
 							<li>I am currently a student at Stony Brook University double majoring in Computer Science and Mathematics. I am part of a 4 year bachelors with honors program for Computer Science with a focus in Network Security.</li>
-							<li>I have worked as an intern for the Travlers Insurance Company as well as the American National Standards Institute (ANSI).</li>
-							<li>I have been to numerous hackathons such as Google's 24 hours of good hackathons as well as the Facebook hackathon.</li>
+							<li>I have worked as an Intern for the Travlers Insurance Company as well as the American National Standards Institute (ANSI).</li>
+							<li>I have been to numerous hackathons including ones sponsored by Google, Facebook and Stony Brook Univeristy</li>
 						</ul>
-						<p>I have used the following technologies: <span style="font-weight: bold;">Java, C#, PHP, HTML, Javascript, JQuery, Bootstrap, ASP.Net, Latex, Microsoft SharePoint</span></p>
+						<p>I am confident in the following technologies: <span style="font-weight: bold;">Java, PHP, Node.js, Python, MySQL, HTML, Javascript, JQuery, GIT</span></p>
 						<h3>Interested?</h3>
 						<p id="moreInfo">More information follows below. If you need to get in contact in me please send me an e-mail through the link in the header bar.</p>
 					</div>
@@ -80,86 +84,46 @@
 			</div>
 
 			<div class="textAreaA">
-				<h2 class="textAreaAHeader">Education:</h2>
+				<h2 class="textAreaAHeader">My Education</h2>
 				<div id="educationInfo">
-					<div class="educationDiv">
-						<h2>Degree:</h2>
-						(Expected Graduation: 2016)
-						<ul>
-						<li>Bachelors of Computer Science with Honors
-							<ul>
-								<li>In Major GPA: 3.82</li>
-							</ul>
-						</li>
-						<li>Bachelors of Mathematics with Honors
-							<ul>
-								<li>In Major GPA: 3.81</li>
-							</ul>
-						</li>
-						<li>SAT score: 2290
-							<ul>
-								<li>99th percentile</li>
-							</ul>
-						</li>
-						<li>Deans List
-							<ul>
-								<li>Fall 2012 - Spring 2014</li>
-							</ul>
-						</li>
-						</ul>
+					<div class="subEd" id="sub1">
+						<h2>Pursuing Double Major at Stony Brook University</h2>
+						<h1>Graduation in:</h1> 
+						<h2 id="gradYear" class="counter">1995</h2>
 					</div>
-					<div class="educationDiv">
-						<h2>Achievements and Awards:</h2>
-						<ul>
-						<li>Full Presidential Scholarship to Stony Brook University
-							<ul>
-								<li>Awarded merit based full scholarship for a four year bachelors degree</li>
-							</ul>
-						</li>
-						<li>Induction into Stony Brook Honors Computer Science Program
-							<ul>
-								<li>Granted induction into academic program with a yearly acceptance of ~30 students</li>
-								<li>Given access to specialized honors curriculum with a focus on advanced computer science topics</li>
-							</ul>
-						</li>
-						<li>Induction into Stony Brook University Scholars Honors Program
-							<ul>
-								<li>Inducted into school wide honors program given to the top 8% of applicants</li>
-								<li>Provided preferential access to 'honors' classes within all disciplines</li>
-							</ul>
-						</li>
-						</ul>
+					<div class="subEd" id="sub2">
+						<h2>Honors Bachelors of Science in Computer Science</h2>
+						<h1>GPA:</h1> 
+						<h2 class="counter">3.<span id="csGPA">0</span></h2>
 					</div>
-					<div class="educationDiv">
-						<h2>Relevant Coursework:</h2>
-						<ul>
-						<li>Computer Science:
-							<ul>
-								<li>CSE 150: Foundations in Computer Science Honors</li>
-								<li>CSE 160: Computer Science A Honors (Intermediate Java)</li>
-								<li>CSE 260: Computer Science B Honors (Advanced Java)</li>
-								<li>CSE 220: Systems Level Programming (Intro to C and Assembly)</li>
-								<li>CSE 305: Principles of Database Systems</li>
-								<li>CSE 320: Computer Org. & Architecture</li>
-								<li>CSE 350: Theory of Computation Honors</li>
-								<li>CSE 373: Theory of Algorithms</li>
-							</ul>
-						</li>
-						<li>Mathematics:
-							<ul>
-								<li>AMS 161: Applied Calculus II</li>
-								<li>AMS 210: Applied Linear Algebra</li>
-								<li>AMS 301: Finite Mathematical Structures</li>
-								<li>MAT 303: Calculus IV with Applications</li>
-							</ul>
-						</li>
-						</ul>
+					<div class="subEd" id="sub3">
+						<h2>Bachelors of Science in Applied Mathematics</h2>
+						<h1>GPA:</h1> 
+						<h2 class="counter">3.<span id="amsGPA">0</span></h2>
+					</div>
+
+					<br>
+
+					<div class="subEd" id="sub4">
+						<h2>Full Presidential Scholarship to Stony Brook University</h2>
+						<h1>For:</h1>
+						<h2 class="counter" id="scholLen">0 <h2 class="counter">Years</h2>
+					</div>
+					<div class="subEd" id="sub5">
+						<h2>Acceptance to Honors Computer Science Program</h2>
+						<h1>Size:</h1> 
+						<h2 class="counter" id="honSize">0</h2> <h2 class="counter">students</h2>
+					</div>
+					<div class="subEd" id="sub6">
+						<h2>Induction into University Scholars Honors Program</h2>
+						<h1>Top:</h1>
+						<h2 class="counter"><span id="uschSize">0</span>%</h2> <h2 class="counter">Accepted</h2>
 					</div>
 				</div>
 			</div>
 
 			<div class="textAreaB">
-				<h2 class="textAreaBHeader">Previous Experience:</h2>
+				<h2 class="textAreaBHeader">Previous Experience</h2>
 				<div id="experienceInfo">
 					<div id="experienceList">
 						<ul class="nestedList">
@@ -199,76 +163,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="textAreaA">
-				<h2 class="textAreaAHeader">Hackathon Projects:</h2>
-				<div id="projectsInfo">
-					<ul class="nestedList">
-						<b>Google's 24 Hours Of Good Hackathon 2 (February 2014)</b>
-						<li class="innerListContainer"><ul>
-							<li>Orchestrated a web-based, hacker simulator game as per project prompt. Received praise for the originality of the idea.</li>
-							<li>Contributed heavily to the design and construction of the web page 'levels' that the hacker would have
-							to complete.</li>
-							<li>Implemented a strong educational back story that encouraged strong passwords and good security practices with particular emphasis on 2-step authentication.</li>
-							Relevant Skills Used: <span>HTML, CSS, Javascript, GIT</span>
-						</ul></li>
-					<b>Facebook Hackathon (October 2013)</b>
-						<li class="innerListContainer"><ul>
-							<li>Worked on an android application based on the popular card game, cards against humanity</li>
-							<li>Implemented client side game logic related to the card game</li>
-							<li>Began implementation on server side game logic and lobby system</li>
-							Relevant Skills Used: <span>Java, XML, PHP</span>
-						</ul></li>
-					<b>Google's 24 Hours Of Good Hackathon (October 2012)</b>
-						<li class="innerListContainer"><ul>
-							<li>Created, along with a team, an android application, using Java, for the not-for-profit organization,
-							Greenmap, at Google HQ NYC.</li>
-							<li>Implemented list functionality that was used to sort "green" locations by their subcategory as specified
-							by design instructions.</li>
-							<li>Began implementation of a Google Maps functionality that allowed users to locate these "green" locations
-							based on their current position.</li>
-							Relevant Skills Used: <span>Java, XML</span>
-						</ul></li>
-					</ul>
-				</div>
-				<div id="projectsImages">
-					<img src="styles/images/google.png" class="googleLogo"/>
-					<img src="styles/images/facebook.png" id="facebookLogo"/>
-					<img src="styles/images/google.png" class="googleLogo" id="google2"/>
-				</div>
-			</div>
-			<div class="textAreaB">
-				<h2 class="textAreaBHeader">Extracurricular Activities:</h2>
-				<div id="extraCurrInfo">
-					<ul class="nestedList">
-						<b>President at RecycleIT (August 2012 - Present)</b>
-							<li class="innerListContainer"><ul>
-								<li>Responsible for the management of the repair and donation of computers to impoverished schools and communitties.</li>
-								<li>Organize and spearhead club meetings and events</li>
-								<li>Reach out to needy communitties to organize computer donations</li>
-							</ul></li>
-						<b>University Scholars Committee Head (August 2012 - Present)</b>
-							<li class="innerListContainer"><ul>
-								<li>Responsible for managing the recreational and social branch of university scholars</li>
-								<li>Lead by weekly club meetings to plan future networking and social events geared for the university scholars honors program</li>
-								<li>Orchestrate and host networking events and speaker series planned by the committee</li>
-							</ul></li>
-						<b>Stony Brook Computing Society (February 2012 - Present)</b>
-						<li class="innerListContainer"><ul>
-							<li>Participate in weekly meetings discussing current and interesting technologies as well as helping organize
-							computer science related events.</li>
-						</ul>
-					</ul>
-				</div>
-				<div id="extraImages">
-					<img src="styles/images/sbuLogo.png" id="sbuLogo2"/>
-					<img src="styles/images/scholarsTorch.png" id="scholarsLogo"/>
-					<img src="styles/images/sbcs.png" id="sbcsLogo"/>
-				</div>
-			</div>
-		</div>
-		<div id="bottom_section">
-			Now optimized for iPad!<br>
-			<b>Contact: Sayalvarun@gmail.com</b>
+			
 		</div>
     </body>
 </html>

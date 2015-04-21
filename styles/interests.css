@@ -1,0 +1,91 @@
+body{
+	background-color: #f5f5f5 !important;
+}
+
+.textAreaBHeader{
+	font-size: 48px;
+	font-family: sans-serif;
+	padding-top: 35px; 
+	margin-bottom: 15px;
+}
+
+.textAreaB{
+	background-color: #4E4E56;
+	color: white;
+    min-height: 650px;
+    overflow: hidden;
+    height: 100%;
+}
+
+#big_title{
+	font-size: 100px;
+	margin-top: 5%;
+	font-weight: 700;
+}
+
+.not_name{
+	font-size: 55px;
+	font-weight: 300;
+	font-style: italic;
+	font-family: Arial;
+}
+
+#name_text{
+	margin-top: 2%;
+	font-weight: 400;
+	font-size: 35px;
+	font-family: 'Calligraffitti', cursive;
+}
+
+.nestedList{
+	list-style-type: none;
+}
+
+.nestedList ul{
+	padding-top: 5px;
+}
+
+.innerListContainer{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.innerListContainer span{margin-bottom: 23px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#extraCurrInfo{
+	width: 64%;
+	float: left;
+}
+
+#extraCurrInfo ul, b{
+	text-align: left;
+}
+
+#extraImages{
+	width: 31%;
+	float: right;
+}
+
+#sbcsLogo{
+	width: 100%;
+	margin-top: 3%;
+}
+
+#scholarsLogo{
+	height: 140px;
+	width: 72px;
+	margin-bottom: 23px;
+	margin-top: 10px;
+}
+
+#sbuLogo2{
+	height: 90px;
+	width: 100%;
+}
+
+#main_container{
+	height: 80% !important; /* Override just since there is only one div on this page*/
+}
