@@ -1,16 +1,15 @@
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+@media only screen and (min-device-width: 768px){
 
 	html,body
 	{
-	    width: 100%;
+	    width: 1024px;
 	    height: 100%;
 	    margin: 0px;
 	    padding: 0px;
 	    overflow-x: hidden; 
 	    overflow-y: auto;
 	}
+
 
 	li{
 		padding-right: 5px;
@@ -40,6 +39,10 @@ and (max-device-width : 480px) {
 		margin-bottom: 10px; 
 	}
 
+	.subEd h2{
+		font-size: 17px !important;
+	}
+
 	#experienceList{
 		width: 100%;
 	}
@@ -58,7 +61,7 @@ and (max-device-width : 480px) {
 	}
 
 	#top_section, #main_container, #bottom_section, #navbar{
-		width: 320px !important;
+		width: 1024px !important;
 	}
 
 	#social_bar img{

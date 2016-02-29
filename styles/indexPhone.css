@@ -1,6 +1,4 @@
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+@media only screen and (min-device-width: 480px){
 
 	#experienceInfo{
 		text-align: left;
@@ -31,6 +29,10 @@ and (max-device-width : 1024px) {
 		text-align: left;
 	}
 
+	#experienceImages img{
+		display: none !important;
+	}
+
 	#main_container img{
 		display: none;
 	}
@@ -38,4 +40,5 @@ and (max-device-width : 1024px) {
 	#introInfo ul{
 		width: 75%;
 	}
+
 }
