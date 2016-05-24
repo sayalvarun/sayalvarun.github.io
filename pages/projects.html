@@ -7,75 +7,75 @@
 		<link href='http://fonts.googleapis.com/css?family=Calligraffitti|Pacifico' rel='stylesheet' type='text/css'>
 		<link href="../styles/Hover-master/css/hover.css" rel="stylesheet" media="all">
 		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="../styles/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		
 		<script src="../jquery.js"></script>
 		<script src="../scripts/projects.js"></script>
 		<script src="../bootstrap/js/bootstrap.js"></script>
+		<script src="../scripts/cube.js"></script>
+		<script src="../waypoints/lib/jquery.waypoints.min.js"></script>
+		<script src="../Three/js/build/three.min.js"></script>
+        <script src="../Three/js/examples/js/Detector.js"></script>
+        <script src="../Three/js/examples/js/libs/stats.min.js"></script>
     </head>
     <body>
-    	
-		<div id="navbar">
-			<div class="left">
-				<p id="nav_name_text"><a href="../index.html">Varun Sayal</a></p>
-			</div>
-			<div class="center">
-				<ul>
-					<li><a class="middleLinks" href="../index.html"><p>Home</p></a></li>
-					<li><a class="middleLinks" href="projects.html"><p>Projects</p></a></li>
-					<li><a class="middleLinks" href="interests.html"><p>Interests</p></a></li>
-				</ul>
-			</div>
-			<div class="right">
-				<ul id="social_bar">
-					<li><a href="https://www.linkedin.com/pub/varun-sayal/62/547/824" target="_blank"><img src="../styles/images/icons/linkedin.png"></a></li>
-					<li><a href="https://plus.google.com/u/1/+VarunSayalIam/about" target="_blank"><img src="../styles/images/icons/googleplus.png"></a></li>
-					<li><a data-toggle="modal" data-target="#basicModal"><img src="../styles/images/icons/email.png" id="mailImage"></a></li>
-					<li><a href="https://www.youtube.com" target="_blank"><img src="../styles/images/icons/youtube.png"></a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="top_section">
-			<h1 id="big_title">Projects!<h1>
-			<p class="not_name">These are things</p>
-			<h2 id="name_text">I enjoy doing</h2>
-		</div>
-
-		<div id="main_container">
-			<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-			    <div class="modal-dialog">
-			        <div class="modal-content">
-			            <div class="modal-header">
-			            <h4 class="modal-title" id="myModalLabel">E-mail form</h4>
-			            </div>
-			            <div class="modal-body">
-			                <input placeholder="Subject" id="modalSubject" required/><br/>
-			                <textarea placeholder="Body of email" id="modalBody"></textarea>
-			            </div>
-			            <div class="modal-footer">
-			                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			                <a id="sendEmailLink" href="#" class="btn btn-primary">Send</a>
-			        	</div>
-			    	</div>
-			  	</div>
-			</div>
-
-			<div class="textAreaB">
-				<h3 class="textAreaBHeader">TweetBeat, Twitter Sentiment Analysis</h3>
-				<div id="projectsInfo">
-
+    	<div id="container">
+			<div id="navbar">
+				<div class="left">
+					<p id="nav_name_text">Varun Sayal</p>
+				</div>
+				<div class="center">
+					<ul>
+						<li><a class="middleLinks" href="../index.html"><p>Home</p></a></li>
+						<li><a class="middleLinks" href="projects.html"><p>Projects</p></a></li>
+						<li><a class="middleLinks" href="interests.html"><p>Interests</p></a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul id="social_bar">
+						<li><a href="https://www.linkedin.com/pub/varun-sayal/62/547/824"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+						<li><a href="https://plus.google.com/u/1/+VarunSayalIam/about" target="_blank"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+						<li><a data-toggle="modal" data-target="#basicModal"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+						<li><a href="https://www.github.com/sayalvarun" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="textAreaA">
-				<h3 class="textAreaAHeader">Link Jumper Script</h3>
-				<div id="educationInfo">
-		
+
+			<div id="top_section">
+				<h1 id="big_title">Projects!<h1>
+				<p class="not_name">These are things</p>
+				<h2 id="name_text">I enjoy doing</h2>
+			</div>
+
+			<div class="textAreaA textArea">
+				<div id="introInfo">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner" role="listbox">
+
+					      <div class="item active">
+					        <img src="../styles/images/roam.jpg" alt="Roam">
+					        <div class="carousel-caption">
+					          <h3>Roam</h3>
+					          <p>Get Google Maps directions without using your data.</p>
+					        </div>
+					      </div>
+					  
+					    </div>
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					      <li data-target="#myCarousel" data-slide-to="1"></li>
+					      <li data-target="#myCarousel" data-slide-to="2"></li>
+					      <li data-target="#myCarousel" data-slide-to="3"></li>
+					    </ol>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div id="bottom_section">
-			Now optimized for iPad!<br>
-			<b>Contact: Sayalvarun@gmail.com</b>
+		</div>
+		<div class="textAreaB">
+			<p>Made with <i class="fa fa-heart "></i> by Varun Sayal</p>
 		</div>
 
     </body>

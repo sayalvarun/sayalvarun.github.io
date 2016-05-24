@@ -1,8 +1,9 @@
 $(document).ready(function(){
 	$("#sendEmailLink").click(function(){
-		getExtra();
-	});
-	$('#navbar').followTo($("#main_container").offset().top -50);
+        getExtra();
+    });
+    $('#navbar').followTo($(".textAreaA").offset().top - ($("#navbar").height()));
+    setupCube(1500,1500);
 });
 
 
