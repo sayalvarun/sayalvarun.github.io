@@ -164,9 +164,9 @@ h2,h3{
 
 .textAreaB{
     overflow: auto;
-    color: black;
+    color: #F5F5F5;
     margin-top: 0%;
-    background-color: transparent;
+    background-color: #222222;
     height: 7%;
 }
 
@@ -222,5 +222,11 @@ h2,h3{
   	#hi{
   		font-size: 250px;
   	}
+
+  	#big_title{
+  		font-size: 60px;
+  	}
+
+
 
 }

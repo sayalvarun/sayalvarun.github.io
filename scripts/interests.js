@@ -2,7 +2,13 @@ $(document).ready(function(){
 	$("#sendEmailLink").click(function(){
 		getExtra();
 	});
-	setupCube(1500,1500);
+
+	textareas = $(".textArea")
+    lastta = textareas[textareas.length-1]
+    bottom_of_text = $(lastta).offset().top + $(lastta).outerHeight()
+
+    setupCube(bottom_of_text, 1500);
+
 	$('#navbar').followTo($(".textAreaA").offset().top - ($("#navbar").height()));
 });
 

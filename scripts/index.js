@@ -4,7 +4,11 @@ $(document).ready(function(){
 	});
 	$('#navbar').followTo($(".textAreaA").offset().top - ($("#navbar").height()));
 
-    setupCube(1500,1500);
+    textareas = $(".textArea")
+    lastta = textareas[textareas.length-1]
+    bottom_of_text = $(lastta).offset().top + $(lastta).outerHeight()
+
+    setupCube(bottom_of_text, 1500);
 
     $("#resume_button").click(function(){
         window.open("files/resume.pdf");
