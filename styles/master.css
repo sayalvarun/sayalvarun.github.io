@@ -159,7 +159,7 @@ h2,h3{
    	position: absolute;
    	width: 100%;
    	text-align: center;
-   	height: 80%;
+   	max-height: 80%;
 }
 
 .textAreaB{
@@ -207,4 +207,20 @@ h2,h3{
 	font-size: 30px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: light;
+}
+
+#container{
+	overflow: hidden;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  	#hi{
+  		font-size: 250px;
+  	}
+
 }
