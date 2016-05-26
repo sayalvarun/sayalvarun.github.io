@@ -14,6 +14,18 @@ $(document).ready(function(){
         window.open("files/resume.pdf");
     });
 
+    window.onresize = function(event){
+        if($(window).height() >=320 && $(window).width() <= 1024){
+            $("#hi").css("font-size","250px")
+            $("#big_title").css("font-size","60px")
+            $("#introInfoList").css("width","85%")
+        }else{
+            $("#hi").css("font-size","330px")
+            $("#big_title").css("font-size","100px")
+            $("#introInfoList").css("width","65%")
+        }
+    }
+
 });
 
 function getExtra(){
