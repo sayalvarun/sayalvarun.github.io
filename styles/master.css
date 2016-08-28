@@ -213,6 +213,11 @@ h2,h3{
 	overflow: hidden;
 }
 
+#used{
+	font-size: .9em;
+    font-family: cursive;
+}
+
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 

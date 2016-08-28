@@ -27,4 +27,27 @@
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
+      padding-top: 50px;
+}
+
+.textArea{
+	height: 70% !important;
+}
+
+.textAreaA{
+	margin-top: 45% !important;
+}
+
+.carousel-indicators{
+	position: relative;
+	bottom: 10px;
+}
+
+.carousel-indicators li {
+  background-color: #999 !important;
+  background-color: rgba(70,70,70,.25) !important;
+}
+
+.carousel-indicators .active {
+  background-color: #444 !important;
 }
